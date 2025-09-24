@@ -19,7 +19,7 @@ export default function Services() {
               {/* Background image wrapper - FIXED z-index */}
               <div className="absolute inset-0 z-0">
                 <Image
-                  src="/rayfish.png"
+                  src="/rayfish.webp"
                   alt="Sea background"
                   fill
                   priority

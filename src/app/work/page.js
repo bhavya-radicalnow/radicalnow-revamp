@@ -20,7 +20,7 @@ export default function Work() {
               {/* Background image wrapper - FIXED z-index */}
               <div className="absolute inset-0 z-0">
                 <Image
-                  src="/work-hero.png"
+                  src="/work-hero.webp"
                   alt="Sea background"
                   fill
                   priority
