@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 export default function Hero({
-  bgSrc = "/background.png",
+  bgSrc = "/background.webp",
   turtleDesktop = "/turtle.png",
   turtleTablet = "/turtle.png",
   turtleMobile = "/turtlemobile.png",
