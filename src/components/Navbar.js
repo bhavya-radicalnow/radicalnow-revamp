@@ -24,18 +24,18 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl">
+    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl px-4 sm:px-6 md:px-6 lg:px-6 xl:px-0">
       {/* pill container */}
       <div
-        className="w-full rounded-[40px] py-2 md:py-6 px-6 backdrop-blur-md bg-slate-900/45 border border-white/6 shadow-[0_10px_30px_rgba(0,0,0,0.35)] flex items-center justify-between"
+        className="w-full rounded-[40px] py-2 md:py-6 pr-6 backdrop-blur-md bg-slate-900/45 border border-white/6 shadow-[0_10px_30px_rgba(0,0,0,0.35)] flex items-center justify-between"
         role="navigation"
         aria-label="Main navigation"
       >
         {/* logo left */}
-        <Link href="/" className="flex items-center">
-          <div className="relative w-[220px] md:w-[280px] lg:w-[320px] h-[24px] md:h-[32px] lg:h-[36px]">
+        <Link href="/" className="flex items-center pl-4 md:pl-8">
+          <div className="relative w-[180px] md:w-[280px] lg:w-[320px] h-[20px] md:h-[32px] lg:h-[36px]">
             <Image
-              src="/rnlabs.png"
+              src="/Logo.webp"
               alt="RadicalNow Labs Logo"
               fill
               style={{ objectFit: "contain" }}
@@ -45,7 +45,7 @@ export default function Navbar() {
         </Link>
 
         {/* desktop links right */}
-        <div className="hidden md:flex items-center gap-8 text-white/95 text-lg font-semibold tracking-tight lg:mr-6">
+        <div className="hidden md:flex items-center gap-8 text-white/95 text-lg font-semibold tracking-tight lg:mr-4">
           <Link href="/" className="nav-link">Home</Link>
           <Link href="/work" className="nav-link">Work</Link>
           <Link href="/services" className="nav-link">Services</Link>
@@ -54,11 +54,12 @@ export default function Navbar() {
         </div>
 
         {/* mobile button right */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center -mr-3">
           <button
             aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
             onClick={toggleMenu}
-            className="ml-2 inline-flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+            className="ml-2 inline-flex items-center justify-center w-6 h-6 rounded-full bg-white shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
           >
             {isOpen ? <X size={18} className="text-slate-800" /> : <Menu size={18} className="text-slate-800" />}
           </button>
@@ -68,7 +69,7 @@ export default function Navbar() {
       {/* Mobile dropdown */}
       {showMenu && (
         <div
-          className={`mt-3 w-full max-w-6xl mx-auto rounded-2xl backdrop-blur-xl bg-slate-900/45 border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.4)] py-8 px-6 md:hidden dropdown ${
+          className={`mt-3 w-full max-w-6xl mx-auto rounded-2xl backdrop-blur-xl bg-slate-900/45 border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.4)] py-8 px-4 sm:px-6 md:hidden dropdown ${
             isOpen ? "dropdown-enter" : "dropdown-exit"
           }`}
         >

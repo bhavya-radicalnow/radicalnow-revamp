@@ -26,7 +26,7 @@ const cards = {
       body:
         "We develop secure and scalable blockchain solutions, including smart contracts, DeFi platforms, NFT marketplaces, and multi-chain integrations. Our expertise helps businesses harness decentralisation, enhance security, and drive innovation in the Web3 ecosystem.",
       bg: "bg-[#EEFCFF]",
-      },
+    },
   ],
   product: [
     {
@@ -60,7 +60,7 @@ const cards = {
       body:
         "By combining user insights with proven UX principles, we identify pain points and deliver actionable improvements",
       bg: "bg-[#F4F2FF]",
-    },    
+    },
     {
       title: "Marketing & Print Design",
       body:
@@ -95,9 +95,12 @@ export default function ServicesGrid() {
           {/* ROW 1: Technology */}
           <div className="flex items-start">
             <h2 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              Technology
-              <br />
-              Services
+              <span className="block md:hidden">Technology Services</span>
+              <span className="hidden md:block">
+                Technology
+                <br />
+                Services
+              </span>
             </h2>
           </div>
 
@@ -112,9 +115,12 @@ export default function ServicesGrid() {
           {/* ROW 2: Product */}
           <div className="flex items-start">
             <h2 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              Product
-              <br />
-              Services
+              <span className="block md:hidden">Product Services</span>
+              <span className="hidden md:block">
+                Product
+                <br />
+                Services
+              </span>
             </h2>
           </div>
 
@@ -129,9 +135,12 @@ export default function ServicesGrid() {
           {/* ROW 3: Design */}
           <div className="flex items-start">
             <h2 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              Design
-              <br />
-              Services
+              <span className="block md:hidden">Design Services</span>
+              <span className="hidden md:block">
+                Design
+                <br />
+                Services
+              </span>
             </h2>
           </div>
 

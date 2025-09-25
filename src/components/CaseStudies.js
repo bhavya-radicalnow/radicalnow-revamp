@@ -11,7 +11,7 @@ export default function CaseStudies() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black">
             Radical ideas, real-world impact
           </h2>
-          <p className="mt-4 text-neutral-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-neutral-600 max-w-3xl mx-auto">
             Showcasing Solutions That Blend Innovation, Empathy, And Impact Across Healthcare And Finance
           </p>
         </div>
